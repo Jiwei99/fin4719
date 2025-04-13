@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { link } from "fs";
 
 export default function Navbar() {
 
