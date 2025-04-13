@@ -1,6 +1,6 @@
 "use client";
 
-import { Badge, Card, Descriptions, Tooltip } from "antd";
+import { Badge, Card, Descriptions } from "antd";
 import { Column, Line } from '@ant-design/plots';
 
 export default function Loan() {
@@ -20,7 +20,6 @@ export default function Loan() {
     riskRating: "Low",
     penalty: "NFT Liquidation",
   };
-
 
   const annualRate = 0.0525;
   const quarterlyRate = annualRate / 4;

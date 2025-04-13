@@ -1,7 +1,6 @@
 "use client";
 
 import { Button, Card, Descriptions } from "antd";
-import Image from "next/image";
 
 export default function NFT() {
 
