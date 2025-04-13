@@ -99,7 +99,7 @@ export default function Loan() {
               </Descriptions.Item>
             </Descriptions>
           </Card>
-          <Card title="Amortisation Forecast">
+          <Card title="Amortisation Forecast" style={{ marginBottom: 24 }}>
             <Line {...configBalance} />
           </Card>
           <Card title="Repayment Breakdown">
