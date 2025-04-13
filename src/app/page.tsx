@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Art from "./components/art";
 import NFT from "./components/nft";
 import Loan from "./components/loan";
