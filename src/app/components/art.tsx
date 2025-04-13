@@ -23,7 +23,7 @@ export default function Art() {
   };
 
   return (
-    <div className="bg-white text-black dark:bg-gray-900 dark:text-white">
+    <div className="bg-white text-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="w-full py-10" id={"art"}>
           <h2 className="text-3xl font-bold mb-8">{"Artwork Details"}</h2>

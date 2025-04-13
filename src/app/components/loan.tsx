@@ -76,12 +76,12 @@ export default function Loan() {
   }
 
   return (
-    <div className="bg-white text-black dark:bg-gray-900 dark:text-white">
+    <div className="bg-white text-black">
       <div className="max-w-7xl mx-auto px-6">
         <div className="w-full py-10" id={"art"}>
           <h2 className="text-3xl font-bold mb-8">{"Loan Details"}</h2>
           <Card style={{ marginBottom: 24 }}>
-            <Descriptions bordered column={2}>
+            <Descriptions bordered column={{ xs: 1, sm: 1, md: 2, lg: 2, xl: 2, xxl: 2 }}>
               <Descriptions.Item label="Loan ID">{loan.id}</Descriptions.Item>
               <Descriptions.Item label="Principal">{loan.principal}</Descriptions.Item>
               <Descriptions.Item label="Collateral Value">{loan.collateralValue}</Descriptions.Item>

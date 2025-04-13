@@ -17,7 +17,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed w-full z-50 shadow-md">
-      <div className="bg-white text-black dark:bg-gray-900 dark:text-white">
+      <div className="bg-white text-black">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex items-center justify-between h-16">
             {/* Left Side: Name */}
@@ -36,7 +36,7 @@ export default function Navbar() {
                   <Link
                     key={item.name}
                     href={`${item.link}`}
-                    className="hover:text-slate-500 dark:hover:text-slate-400"
+                    className="hover:text-slate-500"
                   >
                     {item.name}
                   </Link>
