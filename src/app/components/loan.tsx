@@ -10,6 +10,7 @@ export default function Loan() {
     principal: "$125,000,000",
     collateralValue: "$250,000,000",
     ltvRatio: "50%",
+    minLtv: "40%",
     interestRate: "5.25% per annum",
     term: "36 months",
     startDate: "2024-09-15",
@@ -85,18 +86,19 @@ export default function Loan() {
               <Descriptions.Item label="Loan ID">{loan.id}</Descriptions.Item>
               <Descriptions.Item label="Principal">{loan.principal}</Descriptions.Item>
               <Descriptions.Item label="Collateral Value">{loan.collateralValue}</Descriptions.Item>
-              <Descriptions.Item label="Loan-to-Value Ratio">{loan.ltvRatio}</Descriptions.Item>
               <Descriptions.Item label="Interest Rate">{loan.interestRate}</Descriptions.Item>
+              <Descriptions.Item label="Loan-to-Value Ratio">{loan.ltvRatio}</Descriptions.Item>
               <Descriptions.Item label="Loan Term">{loan.term}</Descriptions.Item>
+              <Descriptions.Item label="Minimum LTV">{loan.minLtv}</Descriptions.Item>
               <Descriptions.Item label="Start Date">{loan.startDate}</Descriptions.Item>
-              <Descriptions.Item label="Repayment Schedule">{loan.repaymentSchedule}</Descriptions.Item>
-              <Descriptions.Item label="Next Payment Due">{loan.nextPayment}</Descriptions.Item>
-              <Descriptions.Item label="Outstanding Balance">{loan.outstandingBalance}</Descriptions.Item>
               <Descriptions.Item label="Risk Rating">{loan.riskRating}</Descriptions.Item>
+              <Descriptions.Item label="Repayment Schedule">{loan.repaymentSchedule}</Descriptions.Item>
               <Descriptions.Item label="Penalty Clause">{loan.penalty}</Descriptions.Item>
+              <Descriptions.Item label="Next Payment Due">{loan.nextPayment}</Descriptions.Item>
               <Descriptions.Item label="Status">
                 <Badge status="processing" text={loan.status} />
               </Descriptions.Item>
+              <Descriptions.Item label="Outstanding Balance">{loan.outstandingBalance}</Descriptions.Item>
             </Descriptions>
           </Card>
           <Card title="Amortisation Forecast" style={{ marginBottom: 24 }}>
