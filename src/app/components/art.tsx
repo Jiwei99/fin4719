@@ -5,6 +5,8 @@ import Image from "next/image";
 
 export default function Art() {
 
+  const prefix = process.env.NODE_ENV === 'production' ? "/fin4719" : "";
+
   const art = {
     title: "The Card Players",
     artist: "Paul Cézanne",
@@ -17,7 +19,7 @@ export default function Art() {
     provenance: "Private European Collection",
     certifier: "Sotheby’s Authentication Services",
     location: "DBS Vault, Singapore",
-    imageUrl: "/art.jpeg",
+    imageUrl: `${prefix}/art.jpeg`,
   };
 
   return (

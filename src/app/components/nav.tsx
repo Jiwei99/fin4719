@@ -5,6 +5,8 @@ import Image from "next/image";
 
 export default function Navbar() {
 
+  const prefix = process.env.NODE_ENV === 'production' ? "/fin4719" : "";
+
   const data = [
     { name: "Home", anchor: "home" },
     { name: "Trade Crypto", anchor: "crypto" },
@@ -20,7 +22,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16">
             {/* Left Side: Name */}
             <div className="flex items-center space-x-4">
-            <Image src={"/dbs.svg"} alt="Logo" width={100} height={100} />
+            <Image src={`${prefix}/dbs.svg`} alt="Logo" width={100} height={100} />
             <h1 className="text-2xl font-bold">
               Digital Exchange
               </h1>
