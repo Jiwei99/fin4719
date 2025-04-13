@@ -2,17 +2,18 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { link } from "fs";
 
 export default function Navbar() {
 
   const prefix = process.env.NODE_ENV === 'production' ? "/fin4719" : "";
 
   const data = [
-    { name: "Home", anchor: "home" },
-    { name: "Trade Crypto", anchor: "crypto" },
-    { name: "Request for Quote", anchor: "quote" },
-    { name: "Security Tokens", anchor: "tokens" },
-    { name: "Art Financing", anchor: "art" }
+    { name: "Home", link: "/" },
+    { name: "Trade Crypto", link: "https://youtu.be/xvFZjo5PgG0?si=n2DcAXjCg1-gbWVA" },
+    { name: "Request for Quote", link: "https://youtu.be/xvFZjo5PgG0?si=n2DcAXjCg1-gbWVA" },
+    { name: "Security Tokens", link: "https://youtu.be/xvFZjo5PgG0?si=n2DcAXjCg1-gbWVA" },
+    { name: "Art Financing", link: "/" }
   ]
 
   return (
@@ -35,7 +36,7 @@ export default function Navbar() {
                 {data.map((item) => ( // Data sorted before passing to Navbar
                   <Link
                     key={item.name}
-                    href={`#${item.anchor}`}
+                    href={`${item.link}`}
                     className="hover:text-slate-500 dark:hover:text-slate-400"
                   >
                     {item.name}
